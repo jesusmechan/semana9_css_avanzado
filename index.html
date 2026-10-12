@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cosmos Café | Animaciones CSS con Keyframes</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Encabezado y navegación -->
+  <header class="header">
+    <div class="logo">
+      <span class="logo__icon">☕</span>
+      <span class="logo__text">Cosmos Café</span>
+    </div>
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="menu-btn" aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </label>
+    <nav class="nav">
+      <a href="#inicio">Inicio</a>
+      <a href="#menu">Menú</a>
+      <a href="#proceso">Proceso</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <!-- Sección principal (hero) -->
+  <section class="hero" id="inicio">
+    <div class="stars">
+      <span></span><span></span><span></span><span></span><span></span>
+      <span></span><span></span><span></span><span></span><span></span>
+    </div>
+
+    <div class="hero__content">
+      <h1 class="hero__title">El café que viene <br><span class="gradient-text">de otro planeta</span></h1>
+      <p class="hero__text typing">Granos seleccionados, tostado artesanal.</p>
+      <a href="#menu" class="btn btn--pulse">Ver menú</a>
+    </div>
+
+    <div class="hero__image">
+      <div class="planet">
+        <div class="planet__ring"></div>
+        <div class="cup">
+          <div class="steam steam--1"></div>
+          <div class="steam steam--2"></div>
+          <div class="steam steam--3"></div>
+          <div class="cup__body"></div>
+          <div class="cup__handle"></div>
+        </div>
+      </div>
+      <div class="orbit">
+        <div class="satellite">🫘</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tarjetas del menú -->
+  <section class="section" id="menu">
+    <h2 class="section__title">Nuestro Menú</h2>
+    <div class="cards">
+      <article class="card" style="--delay: 0.1s">
+        <div class="card__icon">☕</div>
+        <h3>Espresso Lunar</h3>
+        <p>Intenso y aromático, extraído en 25 segundos exactos.</p>
+        <span class="card__price">S/ 8.00</span>
+      </article>
+      <article class="card" style="--delay: 0.3s">
+        <div class="card__icon">🥛</div>
+        <h3>Latte Galáctico</h3>
+        <p>Leche cremosa con arte latte y un toque de vainilla.</p>
+        <span class="card__price">S/ 12.00</span>
+      </article>
+      <article class="card" style="--delay: 0.5s">
+        <div class="card__icon">🧊</div>
+        <h3>Cold Brew Nebula</h3>
+        <p>Infusión en frío por 18 horas, suave y refrescante.</p>
+        <span class="card__price">S/ 14.00</span>
+      </article>
+      <article class="card" style="--delay: 0.7s">
+        <div class="card__icon">🍫</div>
+        <h3>Mocha Estelar</h3>
+        <p>Chocolate belga, espresso doble y crema batida.</p>
+        <span class="card__price">S/ 13.50</span>
+      </article>
+    </div>
+  </section>
+
+  <!-- Proceso con loader animado -->
+  <section class="section section--dark" id="proceso">
+    <h2 class="section__title">Nuestro Proceso</h2>
+    <div class="steps">
+      <div class="step">
+        <div class="loader loader--spin"></div>
+        <h3>Tostado</h3>
+        <p>Controlamos cada grado de temperatura.</p>
+      </div>
+      <div class="step">
+        <div class="loader loader--dots"><span></span><span></span><span></span></div>
+        <h3>Molienda</h3>
+        <p>Molido al momento para máxima frescura.</p>
+      </div>
+      <div class="step">
+        <div class="loader loader--bars"><span></span><span></span><span></span><span></span></div>
+        <h3>Extracción</h3>
+        <p>Presión y tiempo perfectos en cada taza.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pie de página -->
+  <footer class="footer" id="contacto">
+    <p class="footer__heart">Hecho con <span class="heart">❤</span> y CSS Keyframes</p>
+    <p>Av. Las Estrellas 123, Lima · © 2026 Cosmos Café</p>
+  </footer>
+
+</body>
+</html>
